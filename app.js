@@ -5,9 +5,9 @@ $(document).ready(function () {
 })
 
 function myFunction() {
-    window.speechSynthesis.cancel();
+    window.speechSynthesis;
     const text = document.getElementById("mybox").value;
-    const utterance = new SpeechSynthesisUtterance(text);
-    window.speechSynthesis.speak(utterance);
+    const Spoke = new SpeechSynthesisUtterance(text);
+    window.speechSynthesis.speak(Spoke);
 }
 
