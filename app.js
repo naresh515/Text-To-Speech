@@ -2,6 +2,12 @@ $(document).ready(function () {
     $("#sub-btn").click(function () {
         myFunction();
     });
+    $("#pause-btn").click(function () {
+        pause();
+    });
+    $("#stop-btn").click(function () {
+        stop();
+    });
 })
 
 function myFunction() {
@@ -11,3 +17,14 @@ function myFunction() {
     window.speechSynthesis.speak(Spoke);
 }
 
+function pause() {
+    if (!speechSynthesis.paused) {
+        speechSynthesis.pause();
+    } else {
+        speechSynthesis.resume();
+    }
+}
+
+function stop() {
+    speechSynthesis.cancel();
+}
