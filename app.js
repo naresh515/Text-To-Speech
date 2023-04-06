@@ -8,12 +8,21 @@ $(document).ready(function () {
     $("#stop-btn").click(function () {
         stop();
     });
+
+    $("#rate").click(function () {
+        const rate = $(this).val();
+        Spoke.rate = rate;
+    })
 })
+
+let Spoke;
 
 function myFunction() {
     window.speechSynthesis;
     const text = document.getElementById("mybox").value;
-    const Spoke = new SpeechSynthesisUtterance(text);
+    Spoke = new SpeechSynthesisUtterance(text);
+    const rate = $("#rate").val();
+    Spoke.rate = rate;
     window.speechSynthesis.speak(Spoke);
 }
 
