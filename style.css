@@ -14,6 +14,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    margin: 0 auto;
+    padding: 0px 0px 30px;
 }
 
 .speech-container {
@@ -51,6 +57,14 @@ body {
 #rate {
     margin: 0px 0px 20px;
     width: 500px;
+}
+
+.rate {
+    padding: 0px 10px;
+}
+
+label {
+    padding: 0px 0px 10px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 800px) {

@@ -12,13 +12,17 @@
 
 <body>
     <div class="container">
+        <h1>Text to speech converter</h1>
         <div class="speech-container">
             <textarea placeholder="Enter here" class="form-control" id="mybox" rows="10"></textarea>
-            <label for="rate">Volume:</label>
-            <input type="range" min="0.1" max="1" value="0.5" step="0.1" id="rate" />
-            <div class="speech-btn"> <button class="btn" id="sub-btn">play speech</button>
-                <button class="btn" id="pause-btn">pause speech</button>
-                <button class="btn" id="stop-btn">stop speech</button>
+            <label for="rate">Text Speed:</label>
+            <div class="progress-bar">
+                <span class="rate">Slow</span><input type="range" min="0.1" max="1" value="0.5" step="0.1"
+                    id="rate" /><span class="rate">Fast</span>
+            </div>
+            <div class="speech-btn"> <button class="btn" id="sub-btn">Play speech</button>
+                <button class="btn" id="pause-btn">Pause speech</button>
+                <button class="btn" id="stop-btn">Stop speech</button>
             </div>
         </div>
     </div>
